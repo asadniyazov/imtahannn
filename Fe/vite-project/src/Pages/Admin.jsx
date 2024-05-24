@@ -31,7 +31,7 @@ function Admin() {
   return (
 
 <>
- <div style={{MarginTop:"80px"}}>
+ <div className='div' style={{MarginTop:"80px"}}>
  <input type="text" value={Search} onChange={(e)=>setSearch(e.target.value)} />
  <button onClick={()=>SortedByName()}> A-z</button>
  <button onClick={()=>SortedByNamedes()}>Z-a</button>

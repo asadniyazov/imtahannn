@@ -10,6 +10,8 @@ function Basket() {
         <title>Home</title>
         <link rel="canonical" href="https://www.tacobell.com/" />
       </Helmet>
+      <div className='div'>
+
       <div>Total :{Gettotal()}</div>
  {Basket.map((x)=><>
 <div key={x._id}>
@@ -22,6 +24,7 @@ function Basket() {
     <button onClick={()=>IncreaseBasket(x)}>+</button>
 </div>
 </>)}
+      </div>
    </>
   )
 }

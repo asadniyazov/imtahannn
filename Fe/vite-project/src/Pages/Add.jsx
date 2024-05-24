@@ -4,6 +4,8 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 function Add() {
   return (
    <>
+   <div className='div'>
+
    <Formik
        initialValues={{ title: '', des: '', icon: '',price:"" }}
        validationSchema={Yup.object({
@@ -26,7 +28,7 @@ function Add() {
         })
        }}
      >
-       <Form>
+       <Form >
          <label htmlFor="title">First Name</label>
          <Field name="title" type="text" />
          <ErrorMessage name="title" />
@@ -45,6 +47,7 @@ function Add() {
          <button type="submit">Submit</button>
        </Form>
      </Formik>
+   </div>
    </>
   )
 }
